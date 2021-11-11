@@ -1,6 +1,6 @@
 import styles from './HomeBanner.module.css'
 import { Container, Row, Col } from 'react-grid-system';
-import { Text } from '../styled-components'
+import { Text } from '../../styled-components'
 
 const HomeBanner = () => (
   <Container fluid className={styles.container}>
