@@ -13,7 +13,7 @@ const colorMap = {
   textPrimary: '#f2745f',
 }
 
-const TextWrapper = styled.span`
+const TextWrapper = styled.div`
   color: ${props => colorMap[props.color] || '#2c343b'};
   font-size: ${props => fontMap[props.variant] || '22px'};
 `

@@ -1,22 +1,36 @@
 import styles from './HomeBanner.module.css'
 import { Container, Row, Col } from 'react-grid-system';
-import { Text } from '../../styled-components'
+import { Text, Button, Divider } from '../components/styled-components'
 
 const HomeBanner = () => (
   <Container fluid className={styles.container}>
     <Row justify="center">
       <Col sm="content">
-        <Text variant="h1"><i>Soma</i></Text>
+        <Text variant="h1" className={styles.title}>
+          <i>
+            Soma
+            </i>
+        </Text>
       </Col>
     </Row>
-    <Row>
-      <Col sm={12}></Col>
+    <Row justify="center">
+      <Col sm={8}>
+        <Divider />
+      </Col>
     </Row>
     <Row justify="center">
-      <Col sm="content">HOME</Col>
-      <Col sm="content">OUR MENUS</Col>
-      <Col sm="content">BLOG ENTRIES</Col>
-      <Col sm="content">CONTACT US</Col>
+      <Col sm="content">
+        <Button variant="secondary">HOME</Button>
+      </Col>
+      <Col sm="content">
+        <Button variant="secondary">OUR MENUS</Button>
+      </Col>
+      <Col sm="content">
+        <Button variant="secondary">BLOG ENTRIES</Button>
+      </Col>
+      <Col sm="content">
+        <Button variant="secondary">CONTACT US</Button>
+      </Col>
     </Row>
   </Container>
 );
