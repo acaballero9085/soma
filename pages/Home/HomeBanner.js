@@ -1,6 +1,6 @@
 import styles from './HomeBanner.module.css'
 import { Container, Row, Col } from 'react-grid-system';
-import { Text, Button, Divider } from '../components/styled-components'
+import { Text, Button, Divider } from '../../styled-components'
 
 const HomeBanner = () => (
   <Container fluid className={styles.container}>
@@ -14,7 +14,7 @@ const HomeBanner = () => (
       </Col>
     </Row>
     <Row justify="center">
-      <Col sm={8}>
+      <Col sm={10}>
         <Divider />
       </Col>
     </Row>
